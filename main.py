@@ -94,7 +94,7 @@ def home():
 
 def register_patient():
     try:
-        data = request.json  # Get JSON data from Next.js request
+        data = request.json  
         return jsonify({"message": "Patient registered successfully", "data": data}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 400
